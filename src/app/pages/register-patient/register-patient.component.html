@@ -1,0 +1,52 @@
+<div class="contComponent p-1">
+    <div class="contTitle p-3 border-bottom">
+        <h3>Register information about patient</h3>
+    </div>
+    <div class="contPrediction d-flex flex-column p-2 gap-3">
+        <h5>Formulario de Ingreso de Datos</h5>
+        <form>
+            <!-- Campo de Correo Electrónico -->
+            <div class="mb-3">
+                <label for="ci" class="form-label">Cedula</label>
+                <input type="text" class="form-control" id="ci" placeholder="Ingrese la cedula del paciente" required>
+            </div>
+
+            <!-- Campo de Nombres -->
+            <div class="mb-3">
+                <label for="names" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="names" placeholder="Ingrese los nombre del paciente" required>
+            </div>
+
+            <!-- Campo de Apellidos -->
+            <div class="mb-3">
+                <label for="lastnames" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="lastnames" placeholder="Ingrese los apellidos del paciente" required>
+            </div>
+
+            <!-- Campo de Correo Electrónico -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa el correo del paciente" required>
+            </div>
+
+            <!-- Campo de Fecha -->
+            <div class="mb-3">
+                <label for="date" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+
+            <!-- Campo de Sexo -->
+            <div class="mb-3">
+                <label for="basicSelect" class="form-label">Seleccione el sexo del paciente</label>
+                    <select class="form-select" id="basicSelect" aria-label="Seleccionar opción">
+                        <option selected>Elige una paciente</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                    </select>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <button type="submit" class="btn btn-primary">Registrar Paciente</button>
+        </form>
+    </div>
+</div>
